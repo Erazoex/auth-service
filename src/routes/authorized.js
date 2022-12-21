@@ -12,7 +12,7 @@ router.post('/authorized', verifyToken, (req, res) => {
             res.sendStatus(500)
         } else {
             res.json({
-                mensaje: "user authorized",
+                message: "user authorized",
                 authData
             })
         }

@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const jwt = require('jsonwebtoken')
 const fs = require('fs')
-const secret = fs.readFileSync('./rsa_key_pair/newPrivate.pem')
+const secret = fs.readFileSync('./rsa_key_pair/private.pem')
 
 router.post('/login', (req, res) => {
     const user = req.body

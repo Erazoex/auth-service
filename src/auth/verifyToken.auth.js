@@ -1,4 +1,3 @@
-// cat1234
 
 const verifyToken = (req, res, next) => {
     const bearerHeader = req.headers['authorization'];
