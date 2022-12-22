@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.json({ res: "Hello Wolrd!"})
 })
 
-app.use('/auth', require('./routes/login'));
+app.use('/', require('./routes/login'));
 app.use('/auth', require('./routes/authorized'));
 
 app.listen(port, () => {
